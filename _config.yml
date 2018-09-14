@@ -79,5 +79,5 @@ theme: hexo-theme-snippet
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/liujianglc/liujianglc.github.io.git
+  repo: https://gh_token@github.com/liujianglc/liujianglc.github.io.git
   branch: master
