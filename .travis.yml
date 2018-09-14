@@ -31,7 +31,8 @@ script:
 after_success: #执行成功时(以后扩展功能使用)
 
 after_script:
-  - ./_travis.sh #执行部署脚本
+  # - ./_travis.sh #执行部署脚本
+  - hexo d
 # E: Build LifeCycle
 
 branches:
