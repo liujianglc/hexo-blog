@@ -31,8 +31,8 @@ script:
 after_success: #执行成功时(以后扩展功能使用)
 
 after_script:
-  # - ./_travis.sh #执行部署脚本
-  - hexo d
+  - ./_travis.sh #执行部署脚本
+  # - hexo d
 # E: Build LifeCycle
 
 branches:
@@ -40,4 +40,4 @@ branches:
     - master #需要监听部署的分支
 env:
   global:
-   - GH_REF: ${GH_TOKEN}@${GH_REF} #更改为自己git地址
+   - GH_REF: github.com/liujianglc/liujianglc.github.io.git #更改为自己git地址
