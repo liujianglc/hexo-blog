@@ -20,13 +20,13 @@ function failure(){
 
 #默认执行
 function default(){
-  # git clone https://${GH_REF} .deploy_git
-  # cd .deploy_git
+  git clone https://${GH_REF} .deploy_git
+  cd .deploy_git
 
-  # git checkout master
-  # cd ../
+  git checkout master
+  cd ../
 
-  # mv .deploy_git/.git/ ./public/
+  mv .deploy_git/.git/ ./public/
   cd ./public
 
 cat <<EOF >> README.md
@@ -54,9 +54,9 @@ EOF
   # git push --force --quiet "https://liujianglc:${GITEE_TOKEN}@${GITEE_REF}" master:master
 
   # Create Tag
-  # git tag v1.2.$TRAVIS_BUILD_NUMBER -a -m "Auto Taged By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+  git tag v1.2.$TRAVIS_BUILD_NUMBER -a -m "Auto Taged By TravisCI With Build $TRAVIS_BUILD_NUMBER"
   # Github Pages
-  # git push --quiet "https://${GH_TOKEN}@${GH_REF}" master:master --tags
+  git push --quiet "https://${GH_TOKEN}@${GH_REF}" master:master --tags
   # Gitee Pages
   # git push --quiet "https://liujianglc:${GITEE_TOKEN}@${GITEE_REF}" master:master --tags
 }

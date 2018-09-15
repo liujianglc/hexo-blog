@@ -23,6 +23,7 @@ before_script:
   - export TZ='Asia/Shanghai' #设置时区
   - npm install -g gulp  #全局安装Gulp
   - chmod +x _travis.sh  #授权脚本执行权限
+  - git clone https://github.com/shenliyang/hexo-theme-snippet themes/hexo-theme-snippet
 
 script:
   - hexo clean && hexo g #清除缓存并生成静态文件
