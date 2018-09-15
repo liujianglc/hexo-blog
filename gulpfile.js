@@ -33,7 +33,7 @@
         .pipe(less())
         .pipe(rename({basename: "style"}))
         .pipe(gulp.dest(paths.source + 'css'))
-        .pipe(notify({message: 'less compile complete'}));
+        // .pipe(notify({message: 'less compile complete'}));
     });
 
     // 校验JS语法和风格
@@ -42,7 +42,7 @@
         .pipe(jshint())
         .pipe(jshint.reporter(stylish))
         .pipe(gulp.dest(paths.source + 'js/'))
-        .pipe(notify({message: 'js compile complete'}));
+        // .pipe(notify({message: 'js compile complete'}));
     });
 
     // 监听任务-主题开发模式
@@ -66,7 +66,7 @@
         }))
         .pipe(minifycss())
         .pipe(gulp.dest('./public'))
-        .pipe(notify({message: 'css minify complete'}));
+        // .pipe(notify({message: 'css minify complete'}));
     });
 
     // 压缩处理 js
@@ -74,7 +74,7 @@
         return gulp.src('./public/js/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('./public/js'))
-        .pipe(notify({message: 'js minify complete'}));
+        // .pipe(notify({message: 'js minify complete'}));
     });
 
     // 压缩处理 html
