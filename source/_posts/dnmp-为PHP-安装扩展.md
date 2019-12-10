@@ -14,7 +14,7 @@ date: 2019-05-29 22:24:55
 
 解决办法:
 
-# 第一种
+# 第一种 进入容器内部修改
 ```
 docker exec -it dnmp_php56_1 /bin/bash
 ```
@@ -53,7 +53,7 @@ docker-compose restart
 docker container restart containerid
 ```
 
-#  第二种
+#  第二种 修改docker-compose 文件
 
 在extensions 目录下的 install.sh 
 
