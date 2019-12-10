@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: 江小豆-Blog
+subtitle: 希望有一天可以成为别人眼中的大牛
 description:
-keywords:
-author: John Doe
-language:
-timezone:
+keywords: 江小豆,刘江,全栈,前端
+author: Liujiang
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

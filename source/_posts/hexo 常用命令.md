@@ -1,15 +1,19 @@
 ---
-title: Hello World
-abbrlink: 16107
+title: Hexo 常用命令
+abbrlink: 37773
+date: 2018-09-15 22:16:44
+tags: 前端,测试
+categories: 前端 
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+### Quick Start
 
-### Create a new post
+#### Create a new post
 
 ``` bash
 $ hexo new "My New Post"
+$ test
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
