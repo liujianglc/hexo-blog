@@ -5,7 +5,8 @@ date: 2019-05-29 22:14:27
 tags:
 	- Mac
 	- VS code
-categories: Mac
+categories: 
+	- 工具
 ---
 
 
